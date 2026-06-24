@@ -59,7 +59,6 @@ FormulaFiend/
 │ └── server.js
 │
 └── README.md
-└── .gitignor
 
 ---
 
