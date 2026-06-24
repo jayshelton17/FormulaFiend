@@ -1,0 +1,405 @@
+.project-detail-page {
+  min-height: calc(100vh - 80px);
+  background: #05182b;
+  color: #e8f0f8;
+  padding: 34px 5%;
+}
+
+.project-detail-shell {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.project-loading {
+  color: #a9bbce;
+}
+
+.project-back-btn {
+  background: transparent;
+  border: none;
+  color: #2f81f7;
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.project-detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+  margin-bottom: 22px;
+}
+
+.project-breadcrumb {
+  margin: 0 0 10px;
+  color: #8ea8c3;
+  font-size: 0.9rem;
+}
+
+.project-detail-header h1 {
+  margin: 0;
+  font-size: 2rem;
+  line-height: 1.1;
+}
+
+.project-detail-header p {
+  margin-top: 9px;
+  color: #a9bbce;
+}
+
+.project-detail-actions {
+  display: flex;
+  gap: 12px;
+}
+
+.project-primary-btn,
+.project-secondary-btn {
+  border-radius: 10px;
+  padding: 11px 18px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.project-primary-btn {
+  border: 1px solid rgba(47, 129, 247, 0.55);
+  background: #2563eb;
+  color: #ffffff;
+}
+
+.project-secondary-btn {
+  background: transparent;
+  color: #e8f0f8;
+  border: 1px solid rgba(127, 168, 207, 0.35);
+}
+
+.project-primary-btn:hover {
+  background: #2f81f7;
+}
+
+.project-secondary-btn:hover {
+  border-color: rgba(47, 129, 247, 0.7);
+}
+
+.project-summary-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.project-summary-card,
+.project-card {
+  background: rgba(3, 23, 44, 0.92);
+  border: 1px solid rgba(86, 132, 179, 0.28);
+  border-radius: 14px;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.22);
+}
+
+.project-summary-card {
+  padding: 16px;
+}
+
+.project-summary-card span {
+  display: block;
+  color: #8ea8c3;
+  font-size: 0.82rem;
+  margin-bottom: 7px;
+}
+
+.project-summary-card strong {
+  color: #e8f0f8;
+  font-size: 0.95rem;
+}
+
+.status-good {
+  color: #65d98b !important;
+}
+
+.project-main-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 1fr;
+  gap: 14px;
+}
+
+.project-card {
+  padding: 18px;
+}
+
+.project-card h2 {
+  margin: 0 0 16px;
+  color: #2f81f7;
+  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
+.project-card h3 {
+  margin: 18px 0 10px;
+  color: #e8f0f8;
+  font-size: 0.98rem;
+}
+
+.detail-two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 18px;
+  padding: 7px 0;
+  border-bottom: 1px solid rgba(86, 132, 179, 0.12);
+}
+
+.detail-row span {
+  color: #a9bbce;
+  font-size: 0.9rem;
+}
+
+.detail-row strong {
+  color: #e8f0f8;
+  font-size: 0.9rem;
+  text-align: right;
+}
+
+.detail-row em {
+  color: #8ea8c3;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.diagram-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.beam-diagram {
+  position: relative;
+  height: 230px;
+  margin: 10px auto 20px;
+  width: 280px;
+}
+
+.beam-top {
+  position: absolute;
+  top: 20px;
+  left: 45px;
+  width: 190px;
+  height: 46px;
+  border: 2px solid #bcd4ef;
+  background: rgba(47, 129, 247, 0.08);
+}
+
+.beam-web {
+  position: absolute;
+  top: 64px;
+  left: 95px;
+  width: 90px;
+  height: 130px;
+  border: 2px solid #bcd4ef;
+  border-top: none;
+  background: rgba(47, 129, 247, 0.05);
+}
+
+.beam-rebar {
+  position: absolute;
+  width: 9px;
+  height: 9px;
+  background: #e8f0f8;
+  border-radius: 50%;
+  box-shadow: 0 0 10px rgba(47, 129, 247, 0.8);
+}
+
+.top-left {
+  top: 42px;
+  left: 80px;
+}
+
+.top-right {
+  top: 42px;
+  left: 190px;
+}
+
+.bottom-left {
+  top: 170px;
+  left: 115px;
+}
+
+.bottom-right {
+  top: 170px;
+  left: 155px;
+}
+
+.diagram-label {
+  position: absolute;
+  color: #a9bbce;
+  font-size: 0.85rem;
+  font-weight: 800;
+}
+
+.label-b {
+  top: 0;
+  left: 135px;
+}
+
+.label-h {
+  top: 112px;
+  right: 20px;
+}
+
+.label-bw {
+  bottom: 10px;
+  left: 130px;
+}
+
+.diagram-status {
+  margin: auto 0 0;
+  color: #65d98b;
+  font-weight: 800;
+  text-align: center;
+}
+
+.check-card {
+  background: rgba(5, 24, 43, 0.72);
+  border: 1px solid rgba(86, 132, 179, 0.22);
+  border-radius: 12px;
+  padding: 14px;
+  margin-bottom: 12px;
+}
+
+.check-card-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.check-card-header div {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.check-card-header h3 {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+.check-number {
+  width: 26px;
+  height: 26px;
+  background: rgba(47, 129, 247, 0.22);
+  border: 1px solid rgba(47, 129, 247, 0.35);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: #e8f0f8;
+  font-weight: 800;
+}
+
+.check-status {
+  border-radius: 6px;
+  padding: 5px 10px;
+  font-size: 0.8rem;
+  font-weight: 800;
+}
+
+.check-status.good {
+  color: #65d98b;
+  background: rgba(16, 185, 129, 0.13);
+}
+
+.check-status.neutral {
+  color: #64a6ff;
+  background: rgba(47, 129, 247, 0.14);
+}
+
+.check-values {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+.check-values span {
+  display: block;
+  color: #8ea8c3;
+  font-size: 0.78rem;
+  margin-bottom: 5px;
+}
+
+.check-values strong {
+  color: #e8f0f8;
+  font-size: 0.9rem;
+}
+
+.calculation-tabs {
+  display: flex;
+  gap: 22px;
+  border-bottom: 1px solid rgba(86, 132, 179, 0.22);
+  margin-bottom: 14px;
+}
+
+.calculation-tabs button {
+  background: transparent;
+  border: none;
+  color: #a9bbce;
+  padding: 0 0 12px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.calculation-tabs button.active {
+  color: #2f81f7;
+  border-bottom: 3px solid #2f81f7;
+}
+
+.calculation-box {
+  background: rgba(5, 24, 43, 0.72);
+  border: 1px solid rgba(86, 132, 179, 0.22);
+  border-radius: 12px;
+  padding: 14px;
+  margin-bottom: 14px;
+}
+
+.calculation-box h3 {
+  margin-top: 0;
+}
+
+.full-width-btn {
+  width: 100%;
+}
+
+.notes-card p {
+  color: #a9bbce;
+  margin: 0 0 14px;
+}
+
+@media (max-width: 1050px) {
+  .project-summary-grid,
+  .project-main-grid,
+  .detail-two-column {
+    grid-template-columns: 1fr;
+  }
+
+  .project-detail-header {
+    flex-direction: column;
+  }
+
+  .project-detail-actions {
+    width: 100%;
+  }
+
+  .project-primary-btn,
+  .project-secondary-btn {
+    width: 100%;
+  }
+
+  .check-values {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

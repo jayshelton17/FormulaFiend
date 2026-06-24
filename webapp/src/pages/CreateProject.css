@@ -1,0 +1,246 @@
+.create-project-page {
+  min-height: calc(100vh - 80px);
+  background: #05182b;
+  color: #e8f0f8;
+  padding: 42px 6%;
+}
+
+.create-project-shell {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.create-back-btn {
+  background: transparent;
+  border: none;
+  color: #2f81f7;
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin-bottom: 28px;
+  cursor: pointer;
+}
+
+.create-back-btn:hover {
+  color: #64a6ff;
+}
+
+.create-project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+  margin-bottom: 30px;
+}
+
+.create-project-eyebrow {
+  margin: 0 0 10px;
+  color: #2f81f7;
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.create-project-header h1 {
+  margin: 0;
+  font-size: 2.4rem;
+  line-height: 1.1;
+}
+
+.create-project-header p {
+  margin: 12px 0 0;
+  color: #a9bbce;
+  font-size: 1rem;
+}
+
+.create-project-card {
+  background: rgba(2, 16, 34, 0.75);
+  border: 1px solid rgba(86, 132, 179, 0.28);
+  border-radius: 18px;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.32);
+  padding: 28px;
+}
+
+.create-card-section-title {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.create-section-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  background: rgba(47, 129, 247, 0.18);
+  color: #2f81f7;
+  border: 1px solid rgba(47, 129, 247, 0.28);
+  font-size: 1.35rem;
+}
+
+.create-card-section-title h2 {
+  margin: 0;
+  font-size: 1.25rem;
+}
+
+.create-card-section-title p {
+  margin: 5px 0 0;
+  color: #a9bbce;
+  font-size: 0.92rem;
+}
+
+.create-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+}
+
+.create-form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.create-form-group.full-width {
+  width: 100%;
+}
+
+.create-form-group label {
+  margin-bottom: 10px;
+  color: #e8f0f8;
+  font-weight: 700;
+}
+
+.create-form-group label span {
+  color: #ff6b6b;
+}
+
+.create-form-group input,
+.create-form-group textarea,
+.create-form-group select {
+  width: 100%;
+  box-sizing: border-box;
+  background: rgba(5, 24, 43, 0.95);
+  border: 1px solid rgba(127, 168, 207, 0.28);
+  border-radius: 10px;
+  color: #e8f0f8;
+  font-size: 0.98rem;
+  padding: 14px 15px;
+  outline: none;
+}
+
+.create-form-group textarea {
+  min-height: 92px;
+  resize: vertical;
+}
+
+.create-form-group select {
+  cursor: pointer;
+}
+
+.create-form-group input::placeholder,
+.create-form-group textarea::placeholder {
+  color: #7f91a5;
+}
+
+.create-form-group input:focus,
+.create-form-group textarea:focus,
+.create-form-group select:focus {
+  border-color: rgba(47, 129, 247, 0.8);
+  box-shadow: 0 0 0 3px rgba(47, 129, 247, 0.16);
+}
+
+.create-form-group small {
+  margin-top: 9px;
+  color: #9fb3c8;
+  font-size: 0.85rem;
+}
+
+.create-divider {
+  height: 1px;
+  background: rgba(86, 132, 179, 0.22);
+  margin: 30px 0 24px;
+}
+
+.create-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 14px;
+}
+
+.create-primary-btn,
+.create-secondary-btn {
+  border-radius: 10px;
+  padding: 12px 20px;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.create-primary-btn {
+  border: 1px solid rgba(47, 129, 247, 0.55);
+  background: #2563eb;
+  color: #ffffff;
+}
+
+.create-primary-btn:hover {
+  background: #2f81f7;
+}
+
+.create-secondary-btn {
+  background: transparent;
+  color: #e8f0f8;
+  border: 1px solid rgba(127, 168, 207, 0.35);
+}
+
+.create-secondary-btn:hover {
+  border-color: rgba(47, 129, 247, 0.7);
+  color: #ffffff;
+}
+
+@media (max-width: 800px) {
+  .create-project-page {
+    padding: 28px 18px;
+  }
+
+  .create-project-header {
+    flex-direction: column;
+  }
+
+  .create-project-header h1 {
+    font-size: 2rem;
+  }
+
+  .create-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .create-actions {
+    flex-direction: column-reverse;
+  }
+
+  .create-primary-btn,
+  .create-secondary-btn {
+    width: 100%;
+  }
+}
+
+.create-variables-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 22px 28px;
+}
+
+.create-variables-grid .create-form-group:last-child {
+  grid-column: 1 / -1;
+}
+
+@media (max-width: 800px) {
+  .create-variables-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .create-variables-grid .create-form-group:last-child {
+    grid-column: auto;
+  }
+}

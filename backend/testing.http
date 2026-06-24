@@ -1,0 +1,58 @@
+### LOGIN
+POST http://localhost:3000/api/auth/login
+Content-Type: application/json
+
+{
+  "email": "test@test.com",
+  "password": "123456"
+}
+
+### REGISTER
+POST http://localhost:3000/api/auth/register
+Content-Type: application/json
+
+{
+  "username": "test",
+  "email": "test@test.com",
+  "password": "123456"
+}
+
+### GET PROJECTS
+GET http://localhost:3000/api/projects
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwicm9sZSI6InVzZXIiLCJpYXQiOjE3NzczMzE2MzIsImV4cCI6MTc3NzQxODAzMn0.Vr8V1K2-fT8TZ3E6HXVLhrZcacllVEgKER97CRokBFg
+
+### CREATE PROJECT
+POST http://localhost:3000/api/projects
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwicm9sZSI6InVzZXIiLCJpYXQiOjE3NzczMzE2MzIsImV4cCI6MTc3NzQxODAzMn0.Vr8V1K2-fT8TZ3E6HXVLhrZcacllVEgKER97CRokBFg
+Content-Type: application/json
+
+{
+  "name": "Beam Design",
+  "formula_id": 1
+}
+
+### GET FORMULAS
+GET http://localhost:3000/api/formulas
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwicm9sZSI6InVzZXIiLCJpYXQiOjE3NzczMzE2MzIsImV4cCI6MTc3NzQxODAzMn0.Vr8V1K2-fT8TZ3E6HXVLhrZcacllVEgKER97CRokBFg
+
+### FLEXURE CALCULATION
+POST http://localhost:3000/api/calculations/flexure
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwicm9sZSI6InVzZXIiLCJpYXQiOjE3NzczMzEwNzksImV4cCI6MTc3NzQxNzQ3OX0._vLgRRh44deHrtZ8q7RUUxQ4qwTBevIA5TEGDRSpMIY
+Content-Type: application/json
+
+{
+  "b": 10,
+  "d": 20,
+  "fck": 30
+}
+
+###
+POST http://localhost:3000/api/formulas
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwicm9sZSI6InVzZXIiLCJpYXQiOjE3NzczMzE2MzIsImV4cCI6MTc3NzQxODAzMn0.Vr8V1K2-fT8TZ3E6HXVLhrZcacllVEgKER97CRokBFg
+Content-Type: application/json
+
+{
+  "name": "Beam Load Test",
+  "calculation": "A * B",
+  "user_id": 1
+}

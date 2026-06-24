@@ -1,0 +1,149 @@
+.login-page {
+  min-height: calc(100vh - 100px);
+  background: #05182b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-card {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  max-width: 1100px;
+  background: #001428;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 12px;
+  overflow: hidden;
+
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.04),
+    0 20px 60px rgba(0, 0, 0, 0.6)
+}
+
+.login-left {
+  padding: 3rem;
+  color: #e6edf3;
+  background: #001428;
+}
+
+.login-title {
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.login-subtitle {
+  color: #9fb3c8;
+  margin-bottom: 2rem;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.login-form label {
+  font-size: 0.9rem;
+  color: #9fb3c8;
+}
+
+.login-form input {
+  padding: 0.7rem;
+  border-radius: 6px;
+  border: 1px solid rgba(255,255,255,0.1);
+  background: #021022;
+  color: white;
+}
+
+.login-options {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  color: #9fb3c8;
+}
+
+.forgot {
+  cursor: pointer;
+  color: #2f81f7;
+}
+
+.login-btn {
+  background: linear-gradient(90deg, #2f81f7, #1f6feb);
+  border: none;
+  padding: 0.75rem;
+  border-radius: 6px;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.guest-btn {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.2);
+  padding: 0.75rem;
+  border-radius: 6px;
+  color: white;
+  cursor: pointer;
+}
+
+.divider {
+  text-align: center;
+  margin: 1rem 0;
+  color: #6b7280;
+}
+
+.login-footer {
+  font-size: 0.85rem;
+  color: #9fb3c8;
+}
+
+.login-footer span {
+  color: #2f81f7;
+}
+
+.login-right {
+  background: #001428;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-left: 2px solid rgba(255, 255, 255, 0.06);
+}
+
+.login-right img {
+  width: 95%;
+  height: auto;
+  object-fit: cover;
+  opacity: 0.85;
+
+
+  -webkit-mask-image: radial-gradient(
+    ellipse at center,
+    rgba(0, 0, 0, 1) 60%,
+    rgba(0, 0, 0, 0) 100%
+  );
+
+  mask-image: radial-gradient(
+    ellipse at center,
+    rgba(0, 0, 0, 1) 60%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.login-divider {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 24px 0;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.login-divider::before,
+.login-divider::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.08);
+}

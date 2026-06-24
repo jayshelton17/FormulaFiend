@@ -1,0 +1,231 @@
+/* AdminPanel.css */
+
+/* CHANGE: Full page styling added to match FormulaFiend dark blueprint system */
+.admin-page {
+  min-height: calc(100vh - 80px);
+  background: #05182b;
+  color: #e8f0f8;
+  padding: 48px 6%;
+}
+
+/* CHANGE: Main admin container styled like mockup card */
+.admin-panel-card {
+  max-width: 1100px;
+  margin: 0 auto;
+  background: #03172c;
+  border: 1px solid rgba(86, 132, 179, 0.25);
+  border-radius: 18px;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.32);
+  overflow: hidden;
+}
+
+/* CHANGE: Header layout added */
+.admin-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: flex-start;
+  padding: 32px;
+  border-bottom: 1px solid rgba(86, 132, 179, 0.2);
+}
+
+.admin-eyebrow {
+  margin: 0 0 8px;
+  color: #2f81f7;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.admin-header h1 {
+  margin: 0;
+  font-size: 2rem;
+  line-height: 1.1;
+}
+
+.admin-subtitle {
+  margin: 10px 0 0;
+  color: #9fb3c8;
+  max-width: 560px;
+}
+
+/* CHANGE: Primary admin action button */
+.admin-primary-btn {
+  border: 1px solid rgba(47, 129, 247, 0.55);
+  background: #2563eb;
+  color: #ffffff;
+  padding: 11px 18px;
+  border-radius: 10px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.admin-primary-btn:hover {
+  background: #2f81f7;
+}
+
+/* CHANGE: Mini nav styling */
+.admin-mini-nav {
+  display: flex;
+  gap: 22px;
+  padding: 0 32px;
+  border-bottom: 1px solid rgba(86, 132, 179, 0.2);
+}
+
+.admin-mini-nav button {
+  position: relative;
+  background: transparent;
+  border: none;
+  color: #9fb3c8;
+  padding: 18px 0;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.admin-mini-nav button.active {
+  color: #2f81f7;
+}
+
+.admin-mini-nav button.active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  height: 3px;
+  background: #2f81f7;
+  border-radius: 999px;
+}
+
+/* CHANGE: Section spacing */
+.admin-section {
+  padding: 32px;
+}
+
+.admin-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 22px;
+}
+
+.admin-section-header h2 {
+  margin: 0;
+  font-size: 1.35rem;
+}
+
+.admin-section-header p {
+  margin: 6px 0 0;
+  color: #9fb3c8;
+}
+
+/* CHANGE: Users table styling */
+.admin-table-wrapper {
+  border: 1px solid rgba(86, 132, 179, 0.22);
+  border-radius: 14px;
+  overflow: hidden;
+  background: rgba(7, 31, 55, 0.75);
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.admin-table th,
+.admin-table td {
+  text-align: left;
+  padding: 16px 18px;
+  border-bottom: 1px solid rgba(86, 132, 179, 0.16);
+}
+
+.admin-table th {
+  color: #d8e6f5;
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.admin-table td {
+  color: #c8d7e6;
+}
+
+.admin-table tr:last-child td {
+  border-bottom: none;
+}
+
+.status {
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+.status.active {
+  color: #10b981;
+}
+
+.status.inactive {
+  color: #f59e0b;
+}
+
+/* CHANGE: Formula tab card styling */
+.formula-admin-list {
+  display: grid;
+  gap: 14px;
+}
+
+.formula-admin-card {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  align-items: center;
+  padding: 18px;
+  background: rgba(7, 31, 55, 0.75);
+  border: 1px solid rgba(86, 132, 179, 0.22);
+  border-radius: 14px;
+}
+
+.formula-admin-card h3 {
+  margin: 0 0 6px;
+  font-size: 1rem;
+}
+
+.formula-admin-card p {
+  margin: 0;
+  color: #9fb3c8;
+}
+
+.formula-admin-card span {
+  color: #2f81f7;
+  font-weight: 700;
+}
+
+/* CHANGE: Responsive cleanup */
+@media (max-width: 760px) {
+  .admin-page {
+    padding: 28px 18px;
+  }
+
+  .admin-header {
+    flex-direction: column;
+    padding: 24px;
+  }
+
+  .admin-primary-btn {
+    width: 100%;
+  }
+
+  .admin-mini-nav,
+  .admin-section {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+
+  .admin-table-wrapper {
+    overflow-x: auto;
+  }
+
+  .admin-table {
+    min-width: 640px;
+  }
+}

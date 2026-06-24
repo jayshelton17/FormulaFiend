@@ -1,0 +1,143 @@
+.dashboard-page {
+  min-height: calc(100vh - 72px);
+  background: #05182b;
+  color: #f8fafc;
+  padding: 3rem 5rem;
+}
+
+.dashboard-shell {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.dashboard-header {
+  background: rgba(2, 16, 34, 0.75);
+  border: 1px solid rgba(148, 163, 184, 0.14);
+  border-radius: 16px;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  align-items: center;
+  box-shadow: 0 24px 70px rgba(0, 0, 0, 0.35);
+}
+
+.dashboard-eyebrow {
+  color: #2f81f7;
+  font-weight: 700;
+  margin-bottom: 0.4rem;
+}
+
+.dashboard-header h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 800;
+  color: #f8fafc;
+}
+
+.dashboard-header p {
+  color: #9fb3c8;
+  margin-top: 0.5rem;
+}
+
+.dashboard-primary-btn {
+  background: #2f81f7;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.85rem 1.2rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.dashboard-grid {
+  margin-top: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+}
+
+.dashboard-card {
+  text-align: left;
+  background: rgba(2, 16, 34, 0.65);
+  border: 1px solid rgba(148, 163, 184, 0.14);
+  border-radius: 14px;
+  padding: 1.25rem;
+  color: #f8fafc;
+  cursor: pointer;
+}
+
+.dashboard-card h2 {
+  margin: 0 0 0.35rem;
+  color: #f8fafc;
+  font-size: 1rem;
+}
+
+.dashboard-card p {
+  color: #9fb3c8;
+  font-size: 0.9rem;
+}
+
+.dashboard-icon {
+  display: inline-block;
+  color: #2f81f7;
+  font-size: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+.recent-panel {
+  margin-top: 1.5rem;
+  background: rgba(2, 16, 34, 0.65);
+  border: 1px solid rgba(148, 163, 184, 0.14);
+  border-radius: 16px;
+  padding: 1.5rem;
+}
+
+.recent-panel-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.recent-panel-header h2 {
+  color: #f8fafc;
+  margin: 0;
+}
+
+.recent-panel-header button {
+  background: transparent;
+  border: none;
+  color: #2f81f7;
+  cursor: pointer;
+}
+
+.recent-list {
+  margin-top: 1rem;
+}
+
+.recent-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.9rem 0;
+  border-top: 1px solid rgba(148, 163, 184, 0.12);
+  color: #cbd5e1;
+}
+
+.recent-item small {
+  color: #64748b;
+}
+
+@media (max-width: 900px) {
+  .dashboard-page {
+    padding: 2rem;
+  }
+
+  .dashboard-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .dashboard-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
